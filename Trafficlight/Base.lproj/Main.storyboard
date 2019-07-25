@@ -32,53 +32,56 @@
                                     <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzf-RC-mLa"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ix3-2N-nZz">
-                                <rect key="frame" x="102.33333333333333" y="71" width="170.33333333333337" height="541"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="Q6H-Dz-mA2">
+                                <rect key="frame" x="100" y="80" width="175" height="571"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7gq-g3-dcM">
-                                        <rect key="frame" x="0.0" y="0.0" width="170.33333333333334" height="170.33333333333334"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i9l-cq-BGQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="7gq-g3-dcM" secondAttribute="height" multiplier="1:1" id="8Ik-fW-uhL"/>
+                                            <constraint firstAttribute="width" secondItem="i9l-cq-BGQ" secondAttribute="height" multiplier="1:1" id="OrX-BK-44x"/>
                                         </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Af5-2d-gOx">
-                                        <rect key="frame" x="0.0" y="185.33333333333331" width="170.33333333333334" height="170.33333333333331"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ph-Ws-tEz">
+                                        <rect key="frame" x="0.0" y="198" width="175" height="175"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="Af5-2d-gOx" secondAttribute="height" multiplier="1:1" id="nOd-Yu-WKO"/>
+                                            <constraint firstAttribute="width" secondItem="6Ph-Ws-tEz" secondAttribute="height" multiplier="1:1" id="9fz-vo-WPA"/>
                                         </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rkh-75-RaX">
-                                        <rect key="frame" x="0.0" y="370.66666666666669" width="170.33333333333334" height="170.33333333333331"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IM4-9X-LLW">
+                                        <rect key="frame" x="0.0" y="396" width="175" height="175"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="rkh-75-RaX" secondAttribute="height" multiplier="1:1" id="MoV-WC-O3z"/>
+                                            <constraint firstAttribute="width" secondItem="IM4-9X-LLW" secondAttribute="height" multiplier="1:1" id="oRe-qX-1VI"/>
                                         </constraints>
-                                    </imageView>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ix3-2N-nZz" secondAttribute="trailing" constant="100" id="3UT-fl-Fjz"/>
+                            <constraint firstItem="Q6H-Dz-mA2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="7NV-Jb-lX6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7ej-3m-Hu9" secondAttribute="trailing" constant="97" id="Bfh-CH-qaF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Q6H-Dz-mA2" secondAttribute="trailing" constant="100" id="Hl1-sD-7mM"/>
                             <constraint firstItem="7ej-3m-Hu9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="Vs2-uB-Y7c"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ix3-2N-nZz" secondAttribute="bottom" constant="166" id="cTD-wL-Xjy"/>
+                            <constraint firstItem="Q6H-Dz-mA2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="WZs-Jd-Dxh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q6H-Dz-mA2" secondAttribute="bottom" constant="127" id="YQt-E8-4Vf"/>
+                            <constraint firstItem="Q6H-Dz-mA2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ym1-NJ-xS4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7ej-3m-Hu9" secondAttribute="bottom" constant="13" id="gBR-pM-t96"/>
-                            <constraint firstItem="Ix3-2N-nZz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="msg-cy-Ep8"/>
-                            <constraint firstItem="Ix3-2N-nZz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="nUW-7k-HgE"/>
-                            <constraint firstItem="Ix3-2N-nZz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sMd-cT-211"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="greenLight" destination="rkh-75-RaX" id="uDg-OE-gTE"/>
-                        <outlet property="redLight" destination="7gq-g3-dcM" id="SsL-ac-uk3"/>
+                        <outlet property="greenLight" destination="IM4-9X-LLW" id="5fP-fx-nV8"/>
+                        <outlet property="redLight" destination="i9l-cq-BGQ" id="Wlg-rO-HzW"/>
                         <outlet property="startButton" destination="7ej-3m-Hu9" id="YmE-Nd-uVP"/>
-                        <outlet property="yellowLight" destination="Af5-2d-gOx" id="Qhd-vz-cmg"/>
+                        <outlet property="yellowLight" destination="6Ph-Ws-tEz" id="x95-wB-gt4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.40000000000001" y="116.00985221674877"/>
+            <point key="canvasLocation" x="30" y="120"/>
         </scene>
     </scenes>
 </document>

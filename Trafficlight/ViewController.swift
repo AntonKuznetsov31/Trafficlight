@@ -17,9 +17,9 @@ enum Trafficlight {
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var redLight: UIImageView!
-    @IBOutlet weak var yellowLight: UIImageView!
-    @IBOutlet weak var greenLight: UIImageView!
+    @IBOutlet weak var redLight: UIView!
+    @IBOutlet weak var yellowLight: UIView!
+    @IBOutlet weak var greenLight: UIView!
     @IBOutlet weak var startButton: UIButton!
     
     private var currentTrafficLight = Trafficlight.off
@@ -75,16 +75,13 @@ class ViewController: UIViewController {
     }
     
     private func makeTrafficLightRound() {
-        redLight.layer.cornerRadius = redLight.frame.size.width / 2
-        redLight.clipsToBounds = true
-        yellowLight.layer.cornerRadius = yellowLight.frame.size.width / 2
-        yellowLight.clipsToBounds = true
-        greenLight.layer.cornerRadius = greenLight.frame.size.width / 2
-        greenLight.clipsToBounds = true
+        redLight.layer.cornerRadius = redLight.frame.width / 2
+        yellowLight.layer.cornerRadius = yellowLight.frame.width / 2
+        greenLight.layer.cornerRadius = greenLight.frame.width / 2
     }
 }
 
-extension UIImageView {
+extension UIView {
     func turnOff() {
         self.alpha = 0.3
     }
